@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.img-holder img{
+.img-holder img,video{
     width: 100%;
 }
 
