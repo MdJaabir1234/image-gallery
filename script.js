@@ -8,7 +8,9 @@ function fetchImages(){
         if(path.endsWith(".mp4")){
             return `<div class="img-holder"><video controls source="${path}"></video></div>`;
         }else{
-            return `<div class="img-holder"><img src="${path}" alt="Image"></div>`;
+            return `<video controls>
+                      <source src="${path}" type="video/mp4">
+                    </video>`;
         }
     }).join("");
 }
