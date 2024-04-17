@@ -1,7 +1,7 @@
 let loginInput=document.getElementById("login-input");
 let container=document.querySelector(".container");
 let loginCont=document.querySelector(".login-cont");
-let imagePaths=["src/trimvid.mp4","src/16april2.jpg","src/16april1.jpg","src/img1.png","src/img2.png","src/img3.png"]
+let imagePaths=["src/trim-vid.mp4","src/16april2.jpg","src/16april1.jpg","src/img1.png","src/img2.png","src/img3.png"]
 
 function fetchImages(){
     container.innerHTML=imagePaths.map(path=>{
