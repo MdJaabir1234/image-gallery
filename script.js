@@ -6,7 +6,7 @@ let imagePaths=["src/trimvid.mp4","src/16april2.jpg","src/16april1.jpg","src/img
 function fetchImages(){
     container.innerHTML=imagePaths.map(path=>{
         if(path.endsWith(".mp4")){
-            return `<div class="img-holder"><video source="${path}"></video></div>`;
+            return `<div class="img-holder"><video controls source="${path}"></video></div>`;
         }else{
             return `<div class="img-holder"><img src="${path}" alt="Image"></div>`;
         }
