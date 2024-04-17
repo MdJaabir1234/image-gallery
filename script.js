@@ -6,11 +6,11 @@ let imagePaths=["src/seven.jpg","src/six.jpg","src/five.jpg","src/four.jpg","src
 function fetchImages(){
     container.innerHTML=imagePaths.map(path=>{
         if(path.endsWith(".mp4")){
-            return `<div class="img-holder"><video controls source="${path}"></video></div>`;
-        }else{
             return `<video controls>
                       <source src="${path}" type="video/mp4">
                     </video>`;
+        }else{
+            return `<div class="img-holder"><img src="${path}"></div>`;
         }
     }).join("");
 }
