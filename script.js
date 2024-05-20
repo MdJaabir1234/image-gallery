@@ -17,8 +17,8 @@ function fetchImages(){
 
 function login(event){
     event.preventDefault();
-    let password=bcrypt.hash("hello");
-    if(loginInput.value==="mushfiqmessiprogramming"){
+    let hash=1000431022;
+    if(loginInput.value.toString(6)!=loginInput.value && loginInput.value.toString(6)===hash){
         loginCont.classList.add("hide");
         container.classList.remove("hide");
         fetchImages();
