@@ -19,7 +19,7 @@ function login(event){
     event.preventDefault();
     let hash=1000431022;
     let inputPwd=parseInt(loginInput.value);
-    if(inputPwd.toString(6)!=inputPwd && inputPwd.toString(6)===hash){
+    if(inputPwd.toString(6)!=inputPwd && inputPwd.toString(6)==hash){
         loginCont.classList.add("hide");
         container.classList.remove("hide");
         fetchImages();
